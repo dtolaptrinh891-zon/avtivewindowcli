@@ -1,0 +1,29 @@
+{
+  "name": "onodecli",
+  "version": "1.0.0",
+  "description": "Personal automation CLI for Windows 11",
+  "type": "module",
+  "bin": {
+    "onodecli": "./bin/onodecli.js"
+  },
+  "scripts": {
+    "start": "node bin/onodecli.js",
+    "dev": "node --watch bin/onodecli.js",
+    "help": "node bin/onodecli.js --help",
+    "lint": "eslint .",
+    "test": "node --test",
+    "link": "npm link"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "inquirer": "^9.2.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.5.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
